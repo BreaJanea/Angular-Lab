@@ -1,0 +1,52 @@
+
+div {
+
+    background-color: white;
+    width: 480px;
+    height: 450px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+button {
+  color: pink;
+  border-color: pink;
+  border-radius: 5px;
+  height: 25px;
+}
+
+input {
+width: 430px;
+height: 30px;
+border-radius: 5px;
+margin:auto;
+border:1px solid #cccccc;
+
+}
+
+li, p, h2, ul {
+    text-align: start;
+    padding-left: 10px;
+}
+
+input [type=checkbox] :clicked + label.strikethrough{
+    text-decoration: line-through;
+  }
+
+  .addbutton {
+    background-color: rgb(175, 64, 82);
+    width: 450px;
+    height: 40px;
+  }
+
+  .deletebutton {
+      float: right;
+      border: none;
+      color: black;
+  
+
+  }
+  ul {
+    list-style-type: none;
+  }
+

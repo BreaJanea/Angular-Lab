@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class='todos'>
+
+  <h2>TODO List</h2>
+  <p>A place to store the things you have to do!</p>
+  
+  <input type="text" (input) = "filterTodo()" placeholder="Filter your to-dos" [(ngModel)]="filterText" />
+ 
+  <ul>
+    <li *ngFor = "let todo of todos; let i=index" >
+      <p>1.  <button (click)="addTodo()">Complete</button>  Walk the dog. <button class="deletebutton" type="button" (click)="visible = false" >x</button></p> 
+      <p>2.  <button (click)="addTodo()">Complete</button> Go to the store.<button class="deletebutton" type="button" (click)="visible = false" >x</button> </p>
+      <p>3.  <button (click)="addTodo()">Complete</button> Get gas. <button class="deletebutton" type="button" (click)="visible = false" >x</button></p>
+      <p>4.  <button (click)="addTodo()">Complete</button> Wash the car. <button class="deletebutton" type="button" (click)="visible = false" >x</button></p>
+     
+    </li>
+  </ul>
+  
+  <input type="text" placeholder="Add your to do" [(ngModel)]="newTodo" name="newTodo" />
+  <p><button class="addbutton" (click)="addTodo()">Add</button></p>
+
+
+  </div>
+
+
+
+  
